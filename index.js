@@ -32,6 +32,4 @@ app.use('/view/students', studentViewRoutes);
 
 app.get('/', (req, res) => res.redirect('/view/students'));
 
-app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
-});
+export default app;
