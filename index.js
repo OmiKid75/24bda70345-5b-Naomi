@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Deployment successful 🚀");
+  res.redirect("/view/students");
 });
 
 const PORT = process.env.PORT || 3000;

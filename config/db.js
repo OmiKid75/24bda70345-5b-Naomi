@@ -5,7 +5,11 @@ dotenv.config();
 
 export const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI, {
+      // Prevent long buffering on Vercel
+      bufferCommands: false,
+      serverSelectionTimeoutMS: 10000, 
+    });
     console.log("MongoDB Connected");
   } catch (error) {
     console.error("MongoDB connection failed:", error.message);
