@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎓 Student Management System - Project Guide
 
 ## Starting the Project
@@ -105,6 +105,4 @@ Create `index.js` in the root. This is where you connect everything:
 -   Master project organization using the **MVC** pattern.
 
 Happy coding! 🚀
-=======
-# 24bda70345-5b-NaomiZephania
->>>>>>> abfccfb037a5463f36fb5932b2deaba315bc10dc
+
